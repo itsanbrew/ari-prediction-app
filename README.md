@@ -15,7 +15,7 @@ ari_prediction_app/
 └── README.md
 ```
 
-## Setup Instructions
+## Localhost Setup Instructions
 
 ### Backend Setup
 
