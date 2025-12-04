@@ -8,10 +8,6 @@ env/
 venv/
 ENV/
 .venv
-*.pkl
-*.pkl.gz
-*.h5
-*.hdf5
 
 # Node
 node_modules/
@@ -25,7 +21,6 @@ yarn-error.log*
 .next/
 out/
 build/
-.vercel
 
 # IDE
 .vscode/
@@ -44,22 +39,21 @@ Thumbs.db
 
 # Data files (large CSV files)
 *.csv
-!top12.csv
 
 # Images (generated plots)
 *.png
 *.jpg
 *.jpeg
 
-# Model files (too large for git)
-ari_prediction_model.pkl
-model_metadata.json
-# Exception: allow model files in frontend/lib for Vercel deployment
-!frontend/lib/ari_prediction_model.pkl
-!frontend/lib/model_metadata.json
+# Model files - allow in backend directory for local development
+*.pkl
+*.pkl.gz
+*.h5
+*.hdf5
+!ari_prediction_app/backend/*.pkl
+!ari_prediction_app/backend/*.json
 
 # Environment variables
 .env
 .env.local
 .env*.local
-
