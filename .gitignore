@@ -55,8 +55,8 @@ Thumbs.db
 ari_prediction_model.pkl
 model_metadata.json
 # Exception: allow model files in frontend/lib for Vercel deployment
-!ari_prediction_app/frontend/lib/ari_prediction_model.pkl
-!ari_prediction_app/frontend/lib/model_metadata.json
+!frontend/lib/ari_prediction_model.pkl
+!frontend/lib/model_metadata.json
 
 # Environment variables
 .env
