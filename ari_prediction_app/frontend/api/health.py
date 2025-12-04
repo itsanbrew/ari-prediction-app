@@ -24,4 +24,3 @@ class handler(BaseHTTPRequestHandler):
     def log_message(self, format, *args):
         # Suppress default logging
         pass
-
