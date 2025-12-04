@@ -114,7 +114,8 @@ export default function Home() {
     setResult(null);
 
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/predict';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
